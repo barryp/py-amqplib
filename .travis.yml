@@ -10,4 +10,4 @@ services:
 install: python setup.py install
 
 # command to run tests
-script: tests/client_0_8/run_all.py
+script: tests/client_0_8/run_all.py --debug -v
