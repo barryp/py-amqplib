@@ -35,9 +35,13 @@ TEST_NAMES = [
 if sys.version_info >= (2, 5):
     TEST_NAMES.append('test_with')
 
+
 def main():
     suite = unittest.TestLoader().loadTestsFromNames(TEST_NAMES)
-    unittest.TextTestRunner(**settings.test_args).run(suite)
+    result = unittest.TextTestRunner(**settings.test_args).run(suite)
+
+    sys.exit(not result.wasSuccessful())
+
 
 if __name__ == '__main__':
     main()
