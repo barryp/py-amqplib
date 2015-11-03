@@ -42,7 +42,7 @@ setup(name = "amqplib",
       license = "LGPL",
       author = "Barry Pederson",
       author_email = "bp@barryp.org",
-      url = "http://code.google.com/p/py-amqplib/",
+      url = "https://github.com/barryp/py-amqplib",
       packages = ['amqplib', 'amqplib.client_0_8'],
       cmdclass = {'build_py':build_py},
      )
